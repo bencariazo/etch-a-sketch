@@ -79,3 +79,17 @@ header {
 .grid-square {
     display: block;
 }
+
+.grid-size {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+}
+
+.grid-size-btn {
+    padding: 5px;
+    border-radius: 12px;
+}
