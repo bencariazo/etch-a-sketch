@@ -75,3 +75,7 @@ header {
     width: 500px;
     border: solid 5px black;
 }
+
+.grid-square {
+    display: block;
+}
