@@ -53,3 +53,25 @@ table {
   padding: 0;
   margin: 0;
 }
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 50px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 500px;
+    width: 500px;
+    border: solid 5px black;
+}
