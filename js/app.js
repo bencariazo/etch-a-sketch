@@ -78,3 +78,7 @@ const eraseGrid = () => {
         item.style.backgroundColor = "";
     })
 }
+sizeBtn.addEventListener('click', applyNewGridSize);
+clearGrid.addEventListener('click', eraseGrid);
+
+defaultGridSize();
