@@ -6,3 +6,5 @@ const sizeBtn = document.querySelector('#grid-size-btn')
 const clearGrid = document.querySelector('#clear-grid-btn')
 
 const divSize = document.createElement('div');
+divSize.textContent = '';
+
