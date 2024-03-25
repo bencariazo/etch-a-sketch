@@ -81,6 +81,10 @@ header {
     display: block;
 }
 
+.grid-square:hover {
+    background-color: gray;
+}
+
 .grid-size {
     display: flex;
     flex-direction: column;
