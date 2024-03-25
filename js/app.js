@@ -65,3 +65,10 @@ const applyNewGridSize = () => {
     }
     defaultGridSize(newSize);
 };
+
+const removeGrid = () => {
+    while (grid.hasChildNodes()){
+        grid.removeChild(grid.firstChild)
+    }
+}
+
