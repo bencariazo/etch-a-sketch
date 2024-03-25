@@ -19,6 +19,7 @@ function askSize() {
     }
     return getSize(askSize)
 }
+
 const defaultGridSize = (size=16) => {
     divSize.textContent = `${size} x ${size}`
     gridSize.insertBefore(divSize, buttons);
