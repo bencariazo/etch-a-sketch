@@ -94,7 +94,7 @@ header {
     font-size: 28px;
 }
 
-.grid-size-btn {
-    padding: 5px;
+button {
+    padding: 10px;
     border-radius: 12px;
 }
