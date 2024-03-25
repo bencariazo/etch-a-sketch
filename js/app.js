@@ -20,3 +20,9 @@ function askSize() {
     return getSize(askSize)
 }
 
+    for(let i=0;i<size*size;i++){
+        const divSquare = document.createElement('div')
+        divSquare.classList.add('grid-square')
+        divSquare.style.flex = `1 0 calc(100%/${size})`;
+        grid.appendChild(divSquare)
+    }
