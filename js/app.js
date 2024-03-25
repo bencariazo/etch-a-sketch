@@ -55,3 +55,13 @@ const defaultGridSize = (size=16) => {
     })
 
 }
+
+const applyNewGridSize = () => {
+    removeGrid();
+    let newSize = askSize();
+    while(newSize === false || newSize === 0){
+
+        newSize = askSize();
+    }
+    defaultGridSize(newSize);
+};
