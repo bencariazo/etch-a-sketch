@@ -26,3 +26,27 @@ function askSize() {
         divSquare.style.flex = `1 0 calc(100%/${size})`;
         grid.appendChild(divSquare)
     }
+
+    let isMouseDown = false;
+    const gridEl = document.querySelectorAll('.grid-square')
+
+    const changeColorOnMouseDown = gridItem => {
+        gridItem.style.backgroundColor = "gray"
+    }
+    gridEl.forEach(item => {
+
+        item.addEventListener("mousedown", () => {
+            isMouseDown = true;
+            changeColorOnMouseDown(item)
+        })
+        
+        item.addEventListener("mouseup", () => {
+            isMouseDown = false;
+        })
+        
+        item.addEventListener('mouseenter', () => {
+            if (isMouseDown) {
+                changeColorOnMouseDown(item); 
+            }
+        })
+    })
