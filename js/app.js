@@ -19,6 +19,9 @@ function askSize() {
     }
     return getSize(askSize)
 }
+const defaultGridSize = (size=16) => {
+    divSize.textContent = `${size} x ${size}`
+    gridSize.insertBefore(divSize, buttons);
 
     for(let i=0;i<size*size;i++){
         const divSquare = document.createElement('div')
@@ -50,3 +53,5 @@ function askSize() {
             }
         })
     })
+
+}
