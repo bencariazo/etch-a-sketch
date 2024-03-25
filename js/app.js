@@ -72,3 +72,9 @@ const removeGrid = () => {
     }
 }
 
+const eraseGrid = () => {
+    const gridEl = document.querySelectorAll('.grid-square')
+    gridEl.forEach(item => {
+        item.style.backgroundColor = "";
+    })
+}
